@@ -1,3 +1,5 @@
+import operator
+
 users =[
     { "id":0, "name": "Hero" },
     { "id":1, "name": "Dunn" },
@@ -26,16 +28,29 @@ friendship = [
     (8, 9)
 ]
 
-def num_friends(user):
-    '''
-    Find number of friends for a given user
-    '''
-    # TODO
-    pass
+friends = { 'Hero': 2, 'Dunn': 3, 'Sue': 3, 'Chi':3, 'Thor':2, 'Clive':2, 'Hicks': 3, 'Devin':2, 'Kate':3, 'Klein': 1}
 
-def sort_by_num_friends():
-    '''README.md
-    Sort from "most friends" to "least friends"
-    '''
-    # TOOD
-    pass
+#number of friends for a user
+
+def num_friends(user):
+    
+
+    for user in friends:
+        print(user, 'has %s' % friends.get(user), 'friends')
+        
+num_friends(users)
+
+
+#sorting users by number of friends
+
+def sort_by_num_friends(user):
+    
+    print("\nsorting from most to least number of friends\n")
+    
+    sorted_list = sorted(friends.items(), key=operator.itemgetter(1), reverse = True)
+    for key,value in sorted_list:
+        print(key, "has", value, "friends")
+   
+
+    
+sort_by_num_friends(users)
