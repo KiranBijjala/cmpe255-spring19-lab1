@@ -49,7 +49,7 @@ def sort_by_num_friends(user):
     
     sorted_list = sorted(friends.items(), key=operator.itemgetter(1), reverse = True)
     for key,value in sorted_list:
-        print(key, "has", value, "friends")
+        print(key, 'has', value, 'friends')
    
 
     
