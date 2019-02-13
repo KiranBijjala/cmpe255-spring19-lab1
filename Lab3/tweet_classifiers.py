@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
-
 import warnings
 warnings.filterwarnings("ignore")
 def load_data():
@@ -59,7 +53,7 @@ def train_then_build_model(data_labels,features_nd,data):
     # print accuracy
     from sklearn.metrics import accuracy_score
     # TODO
-    print(accuracy_score(y_test, y_pred))
+    print("Accuracy: "+ str(accuracy_score(y_test, y_pred)))
 
 def process():
     data, data_labels = load_data()
@@ -68,17 +62,6 @@ def process():
 
 
 process()
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
