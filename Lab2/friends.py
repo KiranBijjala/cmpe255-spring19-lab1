@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import statistics 
 def mean_num_friends(x):
     return statistics.mean(x)

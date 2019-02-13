@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
 import math
 def normal_pdf(x, mu=0, sigma=1):
     normal_pdf = (1/math.sqrt(2*3.14*sigma**2))*math.exp(-(x - mu)**2/2*sigma**2)
@@ -18,8 +12,6 @@ plt.plot(xs, [normal_pdf(x, sigma=-1) for x in xs], '-', label='mu=0,sigma=-1')
 plt.legend()
 plt.show()
 
-
-# In[ ]:
 
 
 
