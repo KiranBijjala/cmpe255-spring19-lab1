@@ -2,7 +2,7 @@
 # Introduction
 
 Given the availability of large volume of online review data, Sentiment Analysis becomes increasingly important.In this project, a sentiment classifier is built which evalutes the polarity of text being either positive or negative or neutral.
-In this Project, we perform sentiment Analysis for reviews of Yelp dataset by proposing a solution using Logistic Regression using Scikit Learn. The preprocessed data is used to find the sentiment of the reviews with the help of a set of positive and negative keywords. 
+Here, we perform sentiment Analysis for reviews of Yelp dataset by proposing a solution using Logistic Regression using Scikit Learn. The preprocessed data is used to find the sentiment of the reviews with the help of a set of positive and negative keywords. 
 
 # Data Preprocessing
 
